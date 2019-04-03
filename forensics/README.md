@@ -156,7 +156,7 @@ Binary is 1's and 0's, but often is transmitted as text. It would be wasteful to
 We mentioned that to excel at forensics CTF challenges, it is important to be able to recognize encodings. Some can be identifed at a glance, such as [Base64](https://en.wikipedia.org/wiki/Base64) encoded content, identifiable by its alphanumeric charset and its "=" padding suffix (when present). There are many [Base64 encoder/decoders](https://www.base64decode.org) online, or you can use the `base64` command:
 
 ```
-$ echo aGVsbG8gd29ybGQh | base64 -D
+$ echo aGVsbG8gd29ybGQh | base64 -d
 hello world!
 ```
 
